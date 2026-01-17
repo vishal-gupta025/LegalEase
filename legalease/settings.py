@@ -32,7 +32,7 @@ if not SECRET_KEY:
     raise ValueError("DJANGO_SECRET_KEY environment variable is not set. Create a .env file with DJANGO_SECRET_KEY=<your-secret-key>.")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DJANGO_DEBUG', 'False').lower() in ('false', '0', 'no')
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
